@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.container{
+    margin-left: 160px;
+    margin-top: 70px;
+    
+    width: 1300px;
+    height: 700px;
+}
+h2{
+    padding: 20px 20px 20px 0px;
+    color: rgb(42, 184, 42);
+    padding: 10px;
+}
+.left{
+    float: left;
+    margin: 10px;
+    width: 800px;
+    padding: 5px;
+    /* animation-name: left;
+    animation-duration: 8s;
+    animation-iteration-count: infinite; */
+}
+.sl{
+    font-size: 10px;
+    color: gray;   
+    
+}
+p{
+    padding: 5px;
+}
+h3{
+    font-weight: bolder;
+   
+}
+.right{
+   
+    float: right;
+    width: 250px;
+    margin: 10px;
+    /* animation-name: right;
+    animation-duration: 8s;
+    animation-iteration-count: infinite; */
+    padding: 10px;
+}
+.t{
+    margin-left: 30px;
+}
+h5{
+    color: gray;
+}
+h6{
+    color: seagreen;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#ac{
+    color: gray;
+}
+.top{    
+    background-color:#F1F2EA;
+    padding: 30px;
+    font-size: 1.1em;
+    border-radius: 20px;  
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08), 0 6px 6px rgba(0,0,0,0.08);
+
+    transition: box-shadow 0.3s ease-in-out;
+}
+.top:hover{   
+    box-shadow: 0 10px 20px rgba(0,0,0,0.38), 0 6px 6px rgba(0,0,0,0.46);
+}
+.top:hover::after{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08), 0 6px 6px rgba(0,0,0,0.08);
+    opacity: 0;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.bot{
+ margin-top: 30px;   
+}
+.ab{
+    text-decoration: none;
+    color:skyblue;
+}
+.at{
+    text-decoration: none;
+    color:seagreen;
+}
+i{
+    animation-name: icon;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; 
+}
+@keyframes icon{
+    25%{color: skyblue;}
+    75%{color: gray;}
+}
+a{
+    transition: color 0.2s ease-in-out;
+}
+a:hover{
+    color: red; 
+}
+.wiki{
+    text-decoration-line: none;
+    color: blue;
+    
+}
+/* @keyframes right{
+    0%   {background-color: red;border-radius: 15px;}
+    25%  {background-color: yellow;border-radius: 15px;}
+    50%  {background-color: blue;border-radius: 15px;}
+    100% {background-color: green;border-radius: 15px;} 
+}
+@keyframes left{
+    0%   {background-color: red;border-radius: 15px;}
+    25%  {background-color: yellow;border-radius: 15px;}
+    50%  {background-color: blue;border-radius: 15px;}
+    100% {background-color: green;border-radius: 15px;} 
+} */
+
+

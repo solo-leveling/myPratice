@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="lib/vue.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- <p>{{ foo }}</p> -->
+        <!-- this will no longer update `foo`! -->
+        <!-- <button v-on:click="foo = 'baz'">Change it</button>
+        <p>Using v-html directive: <span v-html="rawHtml"></span></p> -->
+        <button @click="toSee">Click to See</button> {{number + 1}} {{ok=="YES" ? "YES" : "NO"}}
+        <input type="text" name="" id="" v-model:value="message">
+        <ul>
+            <li>
+                <!-- <p>{{message.split('').reverse().join("")}}</p> -->
+                <p>{{reverseMessage}}</p>
+            </li>
+        </ul>
+
+        <p v-if="seen">Well it works</p>
+        <p>{{charCount}}</p>
+    </div>
+
+
+    <script>
+        // var obj = {
+        //     foo: 'bar'
+        // }
+        // var raw = {
+        //     rawHtml: "let it be red"
+        // }
+        // Object.freeze(data.foo)
+
+        new Vue({
+            el: '#app',
+            computed: {
+                charCount() {
+                    return this.message.length;
+                },
+                reverseMessage() {
+                    return this.message.split('').reverse().join("");
+                }
+            },
+            methods: {
+                toSee() {
+                    this.seen = !this.seen
+                }
+            },
+            data: {
+                // foo: "bar",
+                // rawHtml: "let it be red"
+                number: 3,
+                ok: "NO",
+                message: "",
+                seen: false
+            }
+        })
+    </script>
+</body>
+
+</html>
